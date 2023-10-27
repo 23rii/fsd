@@ -1,0 +1,6 @@
+import requests
+
+data = {'title': 'Sample Book', 'author': 'John Doe'}
+response = requests.post('http://localhost:5000/add_book', data=data)
+
+print(response.json())
